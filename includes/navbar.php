@@ -25,10 +25,10 @@ for ($i = strlen($rutaActual) - 1; $i > 0; $i--) {
    }
 }
 
-$validacion = in_array($rutaActual, $rutasPermisos);
-if (!$validacion) {
-   header("Location: ../dashboard/index.php");
-}
+// $validacion = in_array($rutaActual, $rutasPermisos);
+// if (!$validacion) {
+//    header("Location: ../dashboard/index.php");
+// }
 ?>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
