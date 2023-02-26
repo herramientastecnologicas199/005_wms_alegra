@@ -51,13 +51,11 @@ if (!empty($_POST)) {
    $pdo = null;
 
    if (count($result) > 0) {
-      $expiracion = 120; // en segundos
-      session_set_cookie_params($expiracion);
       session_start();
       $_SESSION['usuario'] = $result[0];
       header("Location: dashboard/index.php");
    } else {
-      echo "No son correctos las credenciales.";
+      echo "No son correctas las credenciales.";
    }
 }
 ?>

@@ -1,6 +1,7 @@
 <?php
 session_start();
 if (empty($_SESSION) || $_SESSION === null) {
+   echo 'No hay sesion';
    header("Location: ../index.php");
 }
 
@@ -33,7 +34,7 @@ if (!$validacion) {
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
    <div class="container-fluid">
-      <a class="navbar-brand" href="/wms/dashboard/index.php">WMS</a>
+      <a class="navbar-brand" href="/wms_alegra/dashboard/index.php">WMS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,66 +46,65 @@ if (!$validacion) {
                </a>
                <ul class="dropdown-menu" aria-labelledby="dropdown1">
                   <li>
-                     <a class="<?php if (in_array('/wms/dashboard', $rutasPermisos)) {
+                     <a class="<?php if (in_array('/wms_alegra/dashboard', $rutasPermisos)) {
                                     echo 'dropdown-item';
                                  } else {
                                     echo 'dropdown-item disabled';
-                                 }  ?>" href="/wms/dashboard/index.php">Dashboard</a>
+                                 }  ?>" href="/wms_alegra/dashboard/index.php">Dashboard</a>
                   </li>
                   <li>
-                     <a class="<?php if (in_array('/wms/gestionUsuarios', $rutasPermisos)) {
+                     <a class="<?php if (in_array('/wms_alegra/gestionUsuarios', $rutasPermisos)) {
                                     echo 'dropdown-item';
                                  } else {
                                     echo 'dropdown-item disabled';
-                                 }  ?>" href="/wms/gestionUsuarios/index.php">Gestión Usuarios</a>
+                                 }  ?>" href="/wms_alegra/gestionUsuarios/index.php">Gestión Usuarios</a>
                   </li>
                   <li>
-                     <a class="<?php if (in_array('/wms/pagina3', $rutasPermisos)) {
+                     <a class="<?php if (in_array('/wms_alegra/recoger', $rutasPermisos)) {
                                     echo 'dropdown-item';
                                  } else {
                                     echo 'dropdown-item disabled';
-                                 }  ?>" href="/wms/pagina3">Pagina 3</a>
+                                 }  ?>" href="/wms_alegra/recoger">Recoger</a>
                   </li>
                   <li>
-                     <a class="<?php if (in_array('/wms/pagina4', $rutasPermisos)) {
+                     <a class="<?php if (in_array('/wms_alegra/pagina4', $rutasPermisos)) {
                                     echo 'dropdown-item';
                                  } else {
                                     echo 'dropdown-item disabled';
-                                 }  ?>" href="/wms/pagina4">Pagina 4</a>
+                                 }  ?>" href="/wms_alegra/pagina4">Pagina 4</a>
                   </li>
                   <li class="dropend">
                      <a id="dropdown2" class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Menu 1.1
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                        <li><a class="<?php if (in_array('/wms/pagina6', $rutasPermisos)) {
+                        <li><a class="<?php if (in_array('/wms_alegra/pagina6', $rutasPermisos)) {
                                           echo 'dropdown-item';
                                        } else {
                                           echo 'dropdown-item disabled';
-                                       }  ?>" href="/wms/pagina6">Pagina 6</a>
+                                       }  ?>" href="/wms_alegra/pagina6">Pagina 6</a>
                         </li>
-                        <li><a class="<?php if (in_array('/wms/pagina7', $rutasPermisos)) {
+                        <li><a class="<?php if (in_array('/wms_alegra/pagina7', $rutasPermisos)) {
                                           echo 'dropdown-item';
                                        } else {
                                           echo 'dropdown-item disabled';
-                                       }  ?>" href="/wms/pagina7">Pagina 7</a>
+                                       }  ?>" href="/wms_alegra/pagina7">Pagina 7</a>
                         </li>
-                        <li><a class="<?php if (in_array('/wms/pagina8', $rutasPermisos)) {
+                        <li><a class="<?php if (in_array('/wms_alegra/pagina8', $rutasPermisos)) {
                                           echo 'dropdown-item';
                                        } else {
                                           echo 'dropdown-item disabled';
-                                       }  ?>" href="/wms/pagina8">Pagina 8</a>
+                                       }  ?>" href="/wms_alegra/pagina8">Pagina 8</a>
                         </li>
                      </ul>
                   </li>
                   <li>
-                     <a class="<?php if (in_array('/wms/pagina5', $rutasPermisos)) {
+                     <a class="<?php if (in_array('/wms_alegra/pagina5', $rutasPermisos)) {
                                     echo 'dropdown-item';
                                  } else {
                                     echo 'dropdown-item disabled';
-                                 }  ?>" href="/wms/pagina5">Pagina 5</a>
+                                 }  ?>" href="/wms_alegra/pagina5">Pagina 5</a>
                   </li>
-
                </ul>
             </li>
          </ul>
