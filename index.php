@@ -17,7 +17,7 @@
 <div class="vh-100 d-flex bg-body-tertiary">
    <div class="container text-center d-flex align-items-center justify-content-center">
       <form method="post" class="shadow rounded-5 p-3 px-5 w-50 bg-white">
-         <h2>LOGIN</h2>
+         <h2>INGRESO</h2>
          <div class="mb-3 text-start form-floating">
             <input id="input-usuario" name="input_usuario" class="form-control" type="text" placeholder="Usuario" />
             <label for="input-usuario">Usuario</label>
