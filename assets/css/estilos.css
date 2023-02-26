@@ -1,0 +1,245 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.panelLogin{
+    width: 60%;
+    text-align: center;
+    margin: 18vh auto 10px auto;
+    padding: 30px 0px;
+    background-color:#4CAF50; 
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+@media (min-width: 900px) {
+    .campoLogin{
+        width: 50% !important;
+        margin: auto !important;
+    }
+}
+
+
+.campo{
+	width: 300px;
+	border-radius: 3px;
+	background: #FFF;
+}
+
+
+.logo{
+	width: 200px;
+	margin: auto;
+}
+
+.boton{
+	padding: 3px;
+	background: #9B9B9B;
+	border: transparent;
+	border-radius: 3px;
+	color: #FFF;
+	text-decoration: none;
+    font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color:#4CAF50;
+    color: white;
+}
+
+tr:hover{
+    background-color:#f5f5f5;
+}
+
+.img-miniatura{
+	width: 45px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popupBody{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    /*background: #D3D3D3;*/
+    background:#FFF;
+    position: relative;
+    margin: 100px auto;
+}
+
+.popupContent{
+    height: 400px;
+    overflow-y: auto;
+}
+
+.campoModal{
+    width: 100px;
+}
+
+/*#header {
+    margin:auto;
+    margin-bottom: 10px;
+    width:100%;
+    height: 40px;
+    background: gray;
+}
+
+ul {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:gray;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 30px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}*/
+
+.mensaje{
+    background: #FEE7A5;
+}
+
+.hidden{
+    width: 0px;
+    display: none !important;
+}
+
+.block{
+    display: block !important;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.txtCantidad{
+    width: 50px;
+}
+
+.error{
+    background: #FDEDEC;
+    color:#78281F;
+}
+
+.botonIcono{
+    background: transparent;
+}
+
+
+.noSeleccionable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;   
+    -khtml-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+input{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+select {
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-form-control-bg);
+    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+legend{
+    padding: 0px;
+}
+
+fieldset{
+    padding: 0px;
+}
+
+.dropdown-item:active{
+    background-color: #4CAF50 !important;
+}
+
+.nav-link:active{
+    background-color: #4CAF50 !important;
+}
+
