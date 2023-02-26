@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+
+  php-mantenimiento:
+    image: ghcr.io/herramientastecnologicas199/005_wms_alegra:latest
+    networks:
+      - red005_wms_alegra
+    restart: always
+    ports:
+      - "3008:80"
+networks:
+  red005_wms_alegra:
+    driver: bridge
